@@ -1,0 +1,304 @@
+.sign_pages{
+
+    padding: 20px 40px;
+    background: #F3F3F7;
+
+    .back{
+        display: flex;
+        gap: 12px;
+        margin-top: 20px;
+        margin-bottom: 41px;
+        .back_to{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            color: #2B3844;
+
+        }
+
+    }
+
+    .three_block{
+        // border: 1px solid red;
+        display: flex;
+        gap: 80px;
+        // width: 273px;
+        // height: 405px;
+        // background: rgb(194, 240, 104);
+        padding: 24px 32px;
+        margin-bottom: 67px;
+        .book_share{
+            // border: 1px solid red;
+            padding: 24px 32px;
+            background: #fff;
+            img{
+                // margin-bottom: 35px;
+            }
+            .share_me{
+                display: flex;
+                justify-content: center;
+                gap: 38px;
+                margin-top: 35px;
+                    img{
+                        width: 19px;
+                        height: 17px;
+                    }
+
+                    span{
+                        font-weight: 700;
+                        font-size: 11px;
+                        display: flex;
+                        align-items: center;
+                        color: #333333;
+                        text-align: center;
+                    }
+
+
+
+
+                .messages{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+            
+                }
+
+                .notes{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+                }
+
+                .share{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+                }
+            }
+        }
+
+        .comentary{
+            // width: 700px;
+            // background: rgb(233, 233, 169);
+            h1{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 35px;
+                color: #2B3844;
+                margin-bottom: 18px;
+            }
+            .name{
+                font-weight: 400;
+                font-size: 15px;
+                color: #2B3844;
+                margin-bottom: 5px;
+            }
+            .second{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                color: #9A9A9A;
+                margin-bottom: 22px;
+            }
+            .star{
+                display: flex;
+                margin-bottom: 30px;
+                gap: 20px;
+                .rating{
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #2B3844;
+                }
+                .reading{
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #333333;
+
+                }
+            }
+            .aviabilet_status{
+                display: flex;
+                gap: 42px;
+                margin-bottom: 43px;
+                .aviabilet{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    p{
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        color: #2B3844;
+
+                    }
+                    h3{
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        color: #2B3844;
+                    }
+                    .hard{
+                        display: flex;
+                    }
+                    .he_book{
+                        display: flex;
+                    }
+                    .audio_book{
+                        display: flex;
+                    }
+                }
+
+                .status{
+                    h3{
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        color: #2B3844;
+                        margin-bottom: 16px;
+                    }
+                    .shelf{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 85px;
+                        height: 17px;
+                        background: rgb(149, 243, 121);
+                        margin-bottom: 17px;
+                        padding:15px 10px;
+                        border-radius: 5px;
+                    }
+                    .locatsy{
+                        display: flex;
+                        gap: 10px;
+                    }
+                }
+            }
+            .borro{
+                
+                display: flex;
+                gap: 38px;
+                .borrow{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 180px;
+                    height: 61px;
+                    background: #F27851;
+                    border-radius: 5px;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    text-align: center;
+                    color: #FFFFFF;
+
+                }
+                .rednow{
+                    display: flex;
+                    gap: 2px;
+                    .red{
+                        // width: 209px;
+                        // height: 61px;
+                        background: green;
+                        color: #fff;
+                        font-weight: 700;
+                        font-size: 20px;
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        color: #FFFFFF;
+                        padding: 6px 56px;
+                        border-radius: 5px;
+                    }
+                    .pots{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 66px;
+                        height: 61px;
+                        background: green;
+                        border-radius: 5px;
+                    }
+
+                }
+
+            }
+
+        }
+        .about_yours{
+            width: 445px;
+            height: 299px;
+            // border: 1px solid red;
+            padding: 30px 30px;
+            background: #FFFFFF;
+            border-radius: 10px;
+            .yours{
+                display: flex;
+                justify-content: space-between;
+                .namee{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+                    .about{
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 24px;
+                        color: #41B64D;
+                        span{
+                            color: #2B3844;
+                            
+                        }
+                    }
+                    .man_name{
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        color: #2B3844;
+
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    .paragrif{
+        padding: 30px 30px;
+        background: #fff;
+        margin-bottom: 90px;
+        h4{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            color: #41B64D;
+            margin-bottom: 28px;
+        }
+        p{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 128.52%;
+            color: #2B3844;
+        }
+    }
+
+    .bottom_books{
+        h2{
+            color: #41B64D;
+            margin-bottom: 30px;
+            span{
+                color: #2B3844;
+            }
+        }
+        .books_small{
+            display: flex;
+            gap: 50px;
+        }
+    }
+
+
+
+
+}

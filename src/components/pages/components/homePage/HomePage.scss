@@ -1,0 +1,16 @@
+main{
+    display: flex;
+    .main_container{
+        display: flex;
+        .books_block{
+            // display: flex;
+            .books{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                align-items: center;
+                gap: 24px;
+                
+            }
+        }
+    }
+}

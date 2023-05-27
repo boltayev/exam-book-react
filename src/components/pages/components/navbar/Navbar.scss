@@ -1,0 +1,33 @@
+.nav_block{
+    width: 342px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 27px;
+    background: rgb(249, 250, 246);
+    border: 1px solid rgb(249, 243, 252);
+
+    h2{
+        padding-top: 30px;
+        margin-bottom: 28px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        color: #212B36;
+
+    }
+    .nav{
+        width: 288px;
+        // height: 300px;
+        display: flex;
+        gap: 25px;
+        padding: 10px 14px;
+        background: rgba(65, 182, 77, 0.25);
+        border-radius: 10px;
+        .book_name{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+    }
+}
