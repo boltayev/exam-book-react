@@ -11,10 +11,19 @@ import BooksBlock from '../pages/components/booksBlock/BooksBlock';
 import SignPages from '../pages/signpages/SignPages';
 import ErrorPages from '../pages/error/ErrorPages';
 import Layouts from '../layouts/Layouts';
+import { useEffect } from 'react';
+import useState from 'react'
 
 
 
 function App() {
+ useEffect(() => {
+  if(localStorage.getItem('mode') === 'true'){
+    document.body.classList.add('dark')
+  }else{
+    document.body.classList.remove('dark')
+  }
+ })
   return (
       <div>
           {/* <Header></Header> */}
@@ -31,7 +40,7 @@ function App() {
                 <Route path='/' element={<Navigate to={'/sign-in'} />} />
                 <Route path='/home' element={<Layouts />}>
                     <Route index element={<HomePage />} />	
-                    <Route path='/home/books' element={<SignPages />} />
+                    <Route path='/home/books/:postId' element={<SignPages />} />
                 </Route>
                 <Route path='/sign-in' element={<Login />} />
                 <Route path='*' element={<ErrorPages />} />s

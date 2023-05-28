@@ -9,7 +9,8 @@ import Book from "../../../images/sign_book.png"
 import Message from "../../../images/message.png"
 import Notes from "../../../images/notes.png"
 import Share from "../../../images/share.png"
-
+import { useState, useEffect } from "react"
+import { useParams } from "react-router-dom"
 import Radio from "../../../images/radio.png"
 import Star from "../../../images/star.png"
 import Locatsy from "../../../images/locatsy.png"
@@ -19,6 +20,15 @@ import Man from "../../../images/man.png"
 
 
 function SignPages(){
+    const [data, setData] = useState([])
+    const { postId } = useParams();
+    useEffect(() => {
+        fetch('https://owabooks.vercel.app/db.json')
+        .then(res => res.json())
+        .then(data => {
+            setData([data[postId - 1]])
+        })
+    }, [postId])
     return(
         <div className="sign_pages">
             <div className="back">
@@ -28,7 +38,7 @@ function SignPages(){
 
             <div className="three_block">
                 <div className="book_share">
-                    <div><img src={Book} alt="sign_book" /></div>
+                    <div><img src={data[0]?.img} alt="sign_book" /></div>
                     <div className="share_me">
                         <div className="messages">
                             <img src={Message} alt="message" />
@@ -49,7 +59,7 @@ function SignPages(){
 
                 <div className="comentary">
                     <h1>Don’t Make Me Think </h1>
-                    <div className="name">By <span>Steve Krug,</span> 2000</div>
+                    <div className="name">By <span>{data[0]?.author},</span> 2000</div>
                     <div className="second">Second Edition </div>
 
                     <div className="star">
@@ -80,7 +90,7 @@ function SignPages(){
                             <div className="shelf">In-Shelf</div>
                             <div className="locatsy">
                                 <img src={Locatsy} alt="locatsy" />
-                                <div> CS A-15</div>
+                                <div className="loc"> CS A-15</div>
                             </div>
                         </div>
 
@@ -100,7 +110,7 @@ function SignPages(){
                     <div className="yours">
                         <div className="namee">
                             <div className="about">About <span>Author</span> </div>
-                            <div className="man_name">Steve Krug</div>
+                            <div className="man_name">{data[0]?.author}</div>
                         </div>
                         <div className="man_images"><img src={Man} alt="man" /></div>
                     </div>
@@ -150,18 +160,20 @@ function SignPages(){
             </div>
 
             <section className='bottom_books'>
-				<h2>
-					Other <span>Books</span>
-				</h2>
-				<div className='books_small'>
-					<BookSmall />
-					<BookSmall />
-					<BookSmall />
-					<BookSmall />
-					<BookSmall />
-					<BookSmall />
-					<BookSmall />
-				</div>
+                <div>
+                    <h2>
+                        Other <span>Books</span>
+                    </h2>
+                    <div className='books_small'>
+                        <BookSmall />
+                        <BookSmall />
+                        <BookSmall />
+                        <BookSmall />
+                        <BookSmall />
+                        <BookSmall />
+                        <BookSmall />
+                    </div>
+                </div>
 			</section>
 
         </div>

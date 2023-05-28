@@ -8,7 +8,7 @@ function ErrorPages(){
             <div className="numbers">404</div>
             <div  className="found">Oops! That page can’t be found</div>
             <div  className="maybe">The page you are looking for it maybe deleted</div>
-            <Link to="/sign-in" >Go To Home</Link>
+            <Link to="/sign-in" className="button" > Go To Home</Link>
         </div>
     )
 }

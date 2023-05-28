@@ -1,18 +1,20 @@
 .sign_pages{
-
+    background-color: var(--sign-full-bag-color);
+    
     padding: 20px 40px;
-    background: #F3F3F7;
 
     .back{
         display: flex;
         gap: 12px;
         margin-top: 20px;
         margin-bottom: 41px;
+        margin-left: 30px;
         .back_to{
             font-style: normal;
             font-weight: 400;
             font-size: 15px;
             color: #2B3844;
+            text-decoration: none;
 
         }
 
@@ -30,10 +32,7 @@
         .book_share{
             // border: 1px solid red;
             padding: 24px 32px;
-            background: #fff;
-            img{
-                // margin-bottom: 35px;
-            }
+            background: var(--sign-bag-color);
             .share_me{
                 display: flex;
                 justify-content: center;
@@ -49,7 +48,7 @@
                         font-size: 11px;
                         display: flex;
                         align-items: center;
-                        color: #333333;
+                        color:var(--sign-share-color);
                         text-align: center;
                     }
 
@@ -59,6 +58,7 @@
                 .messages{
                     display: flex;
                     flex-direction: column;
+                    align-items: center;
                     gap: 6px;
             
                 }
@@ -66,12 +66,14 @@
                 .notes{
                     display: flex;
                     flex-direction: column;
+                    align-items: center;
                     gap: 6px;
                 }
 
                 .share{
                     display: flex;
                     flex-direction: column;
+                    align-items: center;
                     gap: 6px;
                 }
             }
@@ -84,13 +86,13 @@
                 font-style: normal;
                 font-weight: 400;
                 font-size: 35px;
-                color: #2B3844;
+                color:var(--p-color);
                 margin-bottom: 18px;
             }
             .name{
                 font-weight: 400;
                 font-size: 15px;
-                color: #2B3844;
+                color:var(--p-color);
                 margin-bottom: 5px;
             }
             .second{
@@ -108,13 +110,13 @@
                     font-style: normal;
                     font-weight: 500;
                     font-size: 14px;
-                    color: #2B3844;
+                    color:var(--p-color);
                 }
                 .reading{
                     font-style: normal;
                     font-weight: 500;
                     font-size: 14px;
-                    color: #333333;
+                    color:var(--p-color);
 
                 }
             }
@@ -125,19 +127,19 @@
                 .aviabilet{
                     display: flex;
                     flex-direction: column;
-                    gap: 8px;
+                    gap: 12px;
                     p{
                         font-style: normal;
                         font-weight: 400;
                         font-size: 15px;
-                        color: #2B3844;
+                        color:var(--p-color);
 
                     }
                     h3{
                         font-style: normal;
                         font-weight: 700;
                         font-size: 14px;
-                        color: #2B3844;
+                        color:var(--p-color);
                     }
                     .hard{
                         display: flex;
@@ -155,7 +157,7 @@
                         font-style: normal;
                         font-weight: 700;
                         font-size: 14px;
-                        color: #2B3844;
+                        color:var(--p-color);
                         margin-bottom: 16px;
                     }
                     .shelf{
@@ -172,6 +174,9 @@
                     .locatsy{
                         display: flex;
                         gap: 10px;
+                        .loc{
+                            color:var(--p-color);                            
+                        }
                     }
                 }
             }
@@ -196,7 +201,7 @@
                 }
                 .rednow{
                     display: flex;
-                    gap: 2px;
+                    gap: 1px;
                     .red{
                         // width: 209px;
                         // height: 61px;
@@ -208,8 +213,9 @@
                         align-items: center;
                         text-align: center;
                         color: #FFFFFF;
-                        padding: 6px 56px;
+                        padding: 6px 26px;
                         border-radius: 5px;
+                        border: 0;
                     }
                     .pots{
                         display: flex;
@@ -219,6 +225,7 @@
                         height: 61px;
                         background: green;
                         border-radius: 5px;
+                        border: 0;
                     }
 
                 }
@@ -231,11 +238,12 @@
             height: 299px;
             // border: 1px solid red;
             padding: 30px 30px;
-            background: #FFFFFF;
+            background:var(--sign-bag-color);
             border-radius: 10px;
             .yours{
                 display: flex;
                 justify-content: space-between;
+                margin-bottom: 21px;
                 .namee{
                     display: flex;
                     flex-direction: column;
@@ -244,9 +252,9 @@
                         font-style: normal;
                         font-weight: 600;
                         font-size: 24px;
-                        color: #41B64D;
+                        color: var(--sign-read-color);
                         span{
-                            color: #2B3844;
+                            color: var(--p-color);
                             
                         }
                     }
@@ -254,11 +262,14 @@
                         font-style: normal;
                         font-weight: 400;
                         font-size: 20px;
-                        color: #2B3844;
+                        color: var(--p-color);
 
                     }
                 }
 
+            }
+            p{
+                color: var(--p-color);
             }
         }
 
@@ -266,13 +277,13 @@
 
     .paragrif{
         padding: 30px 30px;
-        background: #fff;
+        background:var(--sign-bag-color);
         margin-bottom: 90px;
         h4{
             font-style: normal;
             font-weight: 600;
             font-size: 24px;
-            color: #41B64D;
+            color: var(--sign-read-color);
             margin-bottom: 28px;
         }
         p{
@@ -280,16 +291,20 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 128.52%;
-            color: #2B3844;
+            color: var(--p-color);
         }
     }
 
     .bottom_books{
+        margin-bottom: 100px;
+        // background: red;
+        // background:var(--sign-bag-color);
+
         h2{
-            color: #41B64D;
+            color: var(--sign-read-color);
             margin-bottom: 30px;
             span{
-                color: #2B3844;
+                color: var(--p-color);
             }
         }
         .books_small{
